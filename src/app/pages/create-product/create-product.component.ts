@@ -80,7 +80,7 @@ export class CreateProductComponent {
     this.http.post(apiUrl, productData, httpOptions).subscribe(
       (response) => {
         console.log('Producto creado:', response);
-        this.router.navigate([/store/]);
+        this.router.navigate(['/homepage']);
       },
       (error) => {
         console.error('Error durante la creación del producto:', error);
