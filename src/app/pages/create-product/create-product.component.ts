@@ -48,7 +48,7 @@ export class CreateProductComponent {
         const formData = new FormData();
         formData.append('image', file);
     
-        const apiUrl = 'http://localhost:3000/images';
+        const apiUrl = 'https://jzfubv9d33.execute-api.us-east-1.amazonaws.com/dev/images';
         this.http.post(apiUrl, formData).subscribe(
           (response: any) => {
             if (response) {
@@ -69,7 +69,7 @@ export class CreateProductComponent {
   }
 
   async createProduct(productData: any) {
-    const apiUrl = 'http://localhost:3000/products';
+    const apiUrl = 'https://jzfubv9d33.execute-api.us-east-1.amazonaws.com/dev/products/';
 
     const httpOptions = {
       headers: new HttpHeaders({
