@@ -14,7 +14,7 @@ export class HomepageComponent {
 
   getProducts() {
     this.http
-      .get(`http://localhost:3000/products`)
+      .get(`https://jzfubv9d33.execute-api.us-east-1.amazonaws.com/dev/products/`)
       .subscribe((response) => {
         this.products = response;
         console.log(this.products);
